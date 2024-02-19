@@ -1,6 +1,6 @@
 package gr.aueb.cf.schoolapp.service.util;
-import org.apache.commons.dbcp2.BasicDataSource;
 
+import org.apache.commons.dbcp2.BasicDataSource;
 import java.sql.Connection;
 import java.sql.SQLDataException;
 import java.sql.SQLException;
