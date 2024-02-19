@@ -1,6 +1,4 @@
 package gr.aueb.cf.schoolapp.service.util;
-
-/* έγινε import απο το dependency το οποίο ήδη έχουμε */
 import org.apache.commons.dbcp2.BasicDataSource;
 
 import java.sql.Connection;
