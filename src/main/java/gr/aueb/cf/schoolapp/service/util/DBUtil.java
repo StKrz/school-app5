@@ -12,16 +12,14 @@ public class DBUtil {
     private static final BasicDataSource ds = new BasicDataSource();
     private static Connection connection;
 
-    // Μέσα σε ένα static ορίζουμε τα διάφορα-config properties,
-    // που ορίζουν το Connection
     static {
         ds.setUrl("jdbc:mysql://localhost:3306/schoolapp5db?serverTimezone=UTC");
         ds.setUsername("school5appuser");
         ds.setPassword(System.getenv("SCHOOL_DB_USER_PASSWD"));
-        ds.setInitialSize(8);   /* πόσα είναι τα αρχικά connections */
-        ds.setMaxTotal(32);     /* μέγιστος αριθμός connections */
-        ds.setMinIdle(8);       /* συνήθως είναι τόσα όσα είναι τα αρχικά.
-                                   τα ελάχιστα Idles*/
+        ds.setInitialSize(8);
+        ds.setMaxTotal(32);
+        ds.setMinIdle(8);
+
         ds.setMaxIdle(10);
         ds.setMaxOpenPreparedStatements(100);
     }
